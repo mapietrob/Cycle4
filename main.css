@@ -1,0 +1,130 @@
+/* Basic reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light grey text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #333; /* Slightly lighter dark shade for the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block; /* Adjust display for alignment */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+li.task-list-item {
+    background: #242424; /* Even lighter dark shade for list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px; /* Space between header and tasks */
+}
+
+.add-task-form,
+.task-action-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.task-list-name, .task-text {
+    margin-right: 10px;
+}
+
+.delete-btn-list, .delete-btn-task {
+    color: red;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="text"], button {
+    padding: 8px;
+    margin: 4px;
+}
+
+button {
+    background-color: #444; /* Dark button background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Style for completed tasks */
+.task-completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-item .task-content, .task-completed .task-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-action-form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* Responsive design considerations */
+@media only screen and (max-width: 600px) {
+    body, header, nav, section, form {
+        padding: 10px;
+    }
+
+    header {
+        text-align: center; /* Keep header content centered on smaller screens */
+    }
+}

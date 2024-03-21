@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bb5039a5-e107-49f4-b027-9e74d404ab93" name="Cycle4" url="http://ccuresearch.coastal.edu/mapietrob">
+        <fileTransfer rootFolder="/var/students/mapietrob" accessType="SFTP" host="ccuresearch.coastal.edu" port="8822" sshConfigId="7382e65b-625a-4d8d-a1dd-5f01cd0f6534" sshConfig="mapietrob@ccuresearch.coastal.edu:8822 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
